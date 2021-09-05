@@ -1,0 +1,34 @@
+.start-content {
+  margin-top: -20px;
+  font-size: 18px;
+  color: $colorWhite;
+  &__tilte {
+    padding: 40px 0;
+    font-size: 28px;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include mobil {
+      flex-direction: column-reverse;
+    }
+  }
+  &-item {
+    &__list {
+      padding: 15px;
+    }
+  }
+  &__img {
+    padding-bottom: 50px;
+  }
+  &__video {
+    position: absolute;
+    top: 38px;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 800px;
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  background-color: $colorPurpur;
+  color: $colorYellow;
+  &__title {
+    padding: 7px;
+    text-align: center;
+    font-size: 21px;
+  }
+}

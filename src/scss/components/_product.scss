@@ -1,0 +1,46 @@
+.product {
+  font-size: 18px;
+  background-color: $colorYellow;
+  margin-top: 20px;
+  &-content {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    @include mobil {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &-description {
+    margin-top: 25px;
+    &__main {
+      grid-row: 3 span;
+      align-items: center;
+      align-self: center;
+      @include mobil {
+        order: 6;
+      }
+      .btn-buy {
+        display: block;
+
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+      &-img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__img {
+      width: 120px;
+      display: block;
+      margin: 0 auto;
+      background-color: cornflowerblue;
+      border-radius: 100px;
+      padding: 8px;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.coment {
+  padding: 35px 0;
+  background-color: #000;
+  color: $colorWhite;
+  font-size: 18px;
+  &-item {
+    width: 360px;
+    margin: 10px auto;
+    @include mobil {
+      width: 300px;
+    }
+    &__list {
+      margin-top: 15px;
+    }
+  }
+  & img {
+    width: 100px;
+    @include mobil {
+      width: 70px;
+    }
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__name {
+    margin-left: 15px;
+  }
+}

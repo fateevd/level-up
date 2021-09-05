@@ -1,0 +1,43 @@
+.form {
+  padding: 50px 0;
+  font-size: 18px;
+  background-color: $colorPurpur;
+  color: $colorYellow;
+  img {
+    width: 150px;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    @include mobil {
+      flex-direction: column-reverse;
+    }
+    &__input {
+      &-in {
+        margin: 15px 0;
+      }
+    }
+    &__text {
+      margin: 15px 0;
+    }
+  }
+}
+
+.timer {
+  text-align: center;
+  padding: 15px;
+}
+
+.price {
+  text-align: center;
+  &-old {
+    color: red;
+    text-decoration: line-through;
+    font-size: 24px;
+  }
+  &-new {
+    font-size: 28px;
+  }
+}

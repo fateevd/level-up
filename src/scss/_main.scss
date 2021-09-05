@@ -1,0 +1,20 @@
+.btn {
+  &-buy {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: $colorPurpur;
+  }
+  &-link {
+    color: $colorYellow;
+  }
+}
+
+.product-img {
+  width: 170px;
+}
+
+.sub-title {
+  text-align: center;
+}
